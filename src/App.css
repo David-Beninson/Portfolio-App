@@ -385,29 +385,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 5vw 0;
   position: relative;
 }
 
 .skill-bx {
   background: #151515;
-  border-radius: 64px;
+  border-radius: 4vw;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 10vw 8vw;
+  margin-top: -10vw;
 }
 
 .skill h2 {
-  font-size: 45px;
+  font-size: 5vw;
   font-weight: 700;
 }
 
 .skill p {
   color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 1vw 0 5vw 0;
 }
 
 .skill-slider {
@@ -418,7 +418,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-slider .item img {
   width: 50%;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 1.5vw auto;
+  max-width: 15vw;
 }
 
 .background-image-left {
@@ -429,7 +430,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-
 .table-container {
   display: flex;
   justify-content: center;
@@ -437,43 +437,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 20%;
 }
 
-.skills-table-top {
-  margin-left: 20%;
-  text-align: center;
-}
-
-.skills-table-top th {
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.skills-table-top td {
-  padding: 1rem;
-  font-size: 1rem;
-}
-
+.skills-table-top,
 .skills-table {
-  margin-left: 10%;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  table-layout: fixed;
 }
 
+.skills-table-top th,
 .skills-table th {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 1vw;
+  font-size: 1.5vw;
 }
 
+.skills-table-top td,
 .skills-table td {
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 1vw;
+  font-size: 1vw;
+}
+
+.small_screen {
+  display: none;
+}
+
+.big_screen {
+  display: block;
 }
 
 @media (max-width: 767px) {
-  .skills-table .skills-table-top th {
-    font-size: 0.5rem;
+  .small_screen {
+    display: block;
   }
 
-  .skills-table .skills-table-top td {
-    font-size: 0.7rem;
+  .big_screen {
+    display: none;
   }
 }
 
