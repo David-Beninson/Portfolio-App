@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
-  "homepage": "https://David-Beninson.github.io/Portfolio-App",
   "version": "0.1.0",
+  "homepage": "https://David-Beninson.github.io/Portfolio-App",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
