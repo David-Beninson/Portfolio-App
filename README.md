@@ -1,6 +1,6 @@
 <body>
 	<h1>Portfolio App</h1>
-	<p>This is a simple Portfolio app built using React.js, where you can showcase your work, skills and experience.</p>
+	<p>This is a simple Portfolio app built using React.js, where I showcase my work, skills and experience.</p>
 	
 
 <h2>Getting Started</h2>
