@@ -9,6 +9,8 @@ import {
 } from "react-icons/fa";
 import { DiNodejs, DiMysql, DiGit, DiCss3 } from "react-icons/di";
 import { SiMongodb, SiJavascript } from "react-icons/si";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLanguage, faRocket } from "@fortawesome/free-solid-svg-icons";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -41,12 +43,16 @@ export const Skills = () => {
                           <div>MySQL</div>
                         </th>
                         <th>
-                        <FaPython />
-                        <div>Python</div>
+                          <FaPython />
+                          <div>Python</div>
                         </th>
                         <th>
                           <DiGit />
                           <div>Git</div>
+                        </th>
+                        <th>
+                          <DiCss3 />
+                          <div>C</div>
                         </th>
                       </tr>
                     </thead>
@@ -77,6 +83,13 @@ export const Skills = () => {
                         <th>
                           <SiMongodb />
                           <div>MongoDB</div>
+                        </th>
+                        <th>
+                          <FontAwesomeIcon
+                            icon={faRocket}
+                            style={{ fontSize: "44px" }}
+                          />
+                          <div>Express</div>
                         </th>
                       </tr>
                     </thead>
@@ -147,6 +160,19 @@ export const Skills = () => {
                         </th>
                       </tr>
                     </thead>
+                    <tbody>
+                      <td>
+                        <DiCss3 size={44} />
+                        <div>C</div>
+                      </td>{" "}
+                      <td>
+                        <FontAwesomeIcon
+                          icon={faRocket}
+                          style={{ fontSize: "44px" }}
+                        />
+                        <div>Express</div>
+                      </td>
+                    </tbody>
                   </table>
                 </div>
               </div>
