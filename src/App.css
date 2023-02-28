@@ -393,8 +393,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 4vw;
   text-align: center;
-  padding: 10vw 8vw;
-  margin-top: -10vw;
+  padding: 3vw 8vw;
+  margin-top: -3vw;
 }
 
 .skill h2 {
@@ -550,6 +550,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 55px 0px 0px 55px;
 }
 
+/*** Making sure the first tab will be the same size as all the other ***/
+@media (max-width: 767px) {
+  .nav-link#projects-tabs-tab-first {
+    padding: 28px;
+  }
+}
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -609,6 +615,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+#description{
+  font-weight: 2000%;
 }
 
 .background-image-right {

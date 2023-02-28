@@ -13,42 +13,57 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "My personal 'Chat GPT'",
+      title: "'Chat GPT'",
       description:
-        "With an elegant user interface that resembles the ChatGPT app, communication with advanced GPT3 model API, and most importantly, the ability to ask the AI for help regarding JavaScript, React, or any other programming language, giving it code and translating it to another programming language, and much more",
+        "The ChatGPT-like interface connects to advanced GPT3 API to offer programming language help, code translation, and more features",
       imgUrl: projImg1,
+      linkTo: null,
+      txt:null,
     },
     {
       title: "To Do List",
       description:
-        "this is a to do app created using React JS that allows users to create and save their to do lists, view all saved lists, edit existing lists, delete existing lists, and mark tasks as completed.",
+        "The to-do app lets users create, save, view, edit, and delete to-do lists and mark tasks as complete.",
       imgUrl: projImg2,
+      linkTo: "https://david-beninson.github.io/todo_app/",
+      txt:"Click me",
+
     },
     {
       title: "QR generator",
       description:
-        "This QR App is a React JS based application that allows users to quickly and easily generate QR codes for their websites, WhatsApp numbers, and other contact information. With this app, you can also download the QR that has generated",
+        "The QR App generates QR codes for websites, or WhatsApp numbers, which users can download instantly",
       imgUrl: projImg3,
+      linkTo: "https://david-beninson.github.io/QR/",
+      txt:"Click me",
     },
     {
       title: "Building Surveys",
       description:
-        "Survey App is a web application that allows users to create and send surveys to their contacts. It also provides users with the ability to view the results of their surveys.",
+        "The Survey App is a web tool for creating and sending surveys to contacts, with the option to view the survey results.",
       imgUrl: projImg4,
+      linkTo: null,
+      txt:null,
     },
     {
       title: "Hangman",
       description:
-        " The Hangman app is a ReactJS-based game that allows users to guess the hidden word by guessing one letter at a time. The game keeps track of the user's progress and displays the correct and incorrect guesses.  The app is designed to be fun and challenging, providing an enjoyable experience for all ages.",
+        "The Hangman app lets users guess a hidden word one letter at a time and shows correct/incorrect guesses.",
       imgUrl: projImg5,
+      linkTo: "https://david-beninson.github.io/hangman/",
+      txt:"Click me",
     },
     {
       title: "Sudoku game",
       description:
-        "Welcome to my Sudoku game! This app was built using React and offers three levels of difficulty: medium, easy, and hard. Challenge your mind by solving puzzles at your preferred level, and enjoy a smooth and intuitive user interface that allows you to easily input your answers. Whether you're a Sudoku pro or just starting out, this game is perfect for anyone who loves a good brain-teaser. So go ahead, give it a try, and see how far you can go!",
+        "The Sudoku game offers three levels of difficulty: easy, medium, and hard.",
       imgUrl: projImg6,
+      linkTo: "https://david-beninson.github.io/sudoku_app/",
+      txt:"Click me",
     },
   ];
+
+  
 
   return (
     <section className="project" id="projects">
@@ -84,7 +99,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Link for the code</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">For mor projects</Nav.Link>
+                        <Nav.Link eventKey="third">For more projects</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -96,7 +111,9 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <ProjectCard key={index} {...project}/>
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
@@ -105,7 +122,7 @@ export const Projects = () => {
                           style={{
                             borderCollapse: "separate",
                             borderSpacing: "0 10px",
-                            margin: "0 auto"
+                            margin: "0 auto",
                           }}
                         >
                           <tr>
@@ -164,7 +181,17 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                        <div style={{margin: "0 auto"}}> <h3 > To see more projects on my GitHub account, <a href="https://github.com/David-Beninson?tab=repositories"> click here</a></h3></div>
+                          <div style={{ margin: "0 auto" }}>
+                            {" "}
+                            <h3>
+                              {" "}
+                              To see more projects on my GitHub account,{" "}
+                              <a href="https://github.com/David-Beninson?tab=repositories">
+                                {" "}
+                                click here
+                              </a>
+                            </h3>
+                          </div>
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
