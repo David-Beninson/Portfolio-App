@@ -17,7 +17,6 @@ export const Projects = () => {
       description:
         "The ChatGPT-like interface connects to advanced GPT3 API to offer programming language help, code translation, and more features",
       imgUrl: projImg1,
-      linkTo: null,
       txt:null,
     },
     {
@@ -42,7 +41,6 @@ export const Projects = () => {
       description:
         "The Survey App is a web tool for creating and sending surveys to contacts, with the option to view the survey results.",
       imgUrl: projImg4,
-      linkTo: null,
       txt:null,
     },
     {
