@@ -6,6 +6,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
+  const email = process.env.REACT_APP_EMAIL;
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -86,7 +87,7 @@ export const Banner = () => {
                   </p>
                   <button
                     onClick={() => {
-                      window.open("mailto:davidbeninson@gmail.com");
+                      window.open(`mailto:${email}`);
                     }}
                   >
                     Send me an Email <ArrowRightCircle size={25} />

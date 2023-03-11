@@ -11,6 +11,8 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
+  const githubProjects = process.env.REACT_APP_GITHUB_PORJECTS;  
+  const github = process.env.REACT_APP_GITHUB;
   const projects = [
     {
       title: "'Chat GPT'",
@@ -24,7 +26,7 @@ export const Projects = () => {
       description:
         "The to-do app lets users create, save, view, edit, and delete to-do lists and mark tasks as complete.",
       imgUrl: projImg2,
-      linkTo: "https://david-beninson.github.io/todo_app/",
+      linkTo: `${githubProjects}/todo_app/`,
       txt:"Click me",
 
     },
@@ -33,7 +35,7 @@ export const Projects = () => {
       description:
         "The QR App generates QR codes for websites, or WhatsApp numbers, which users can download instantly",
       imgUrl: projImg3,
-      linkTo: "https://david-beninson.github.io/QR/",
+      linkTo: `${githubProjects}/QR/`,
       txt:"Click me",
     },
     {
@@ -48,7 +50,7 @@ export const Projects = () => {
       description:
         "The Hangman app lets users guess a hidden word one letter at a time and shows correct/incorrect guesses.",
       imgUrl: projImg5,
-      linkTo: "https://david-beninson.github.io/hangman/",
+      linkTo: `${githubProjects}/hangman/`,
       txt:"Click me",
     },
     {
@@ -56,7 +58,7 @@ export const Projects = () => {
       description:
         "The Sudoku game offers three levels of difficulty: easy, medium, and hard.",
       imgUrl: projImg6,
-      linkTo: "https://david-beninson.github.io/sudoku_app/",
+      linkTo: `${githubProjects}/sudoku_app/`,
       txt:"Click me",
     },
   ];
@@ -130,7 +132,7 @@ export const Projects = () => {
                           <tr>
                             <td>Open Ai</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/Open_Ai">
+                              <a href={`${github}/Open_Ai`}>
                                 My personal "Chat GPT"
                               </a>
                             </td>
@@ -138,7 +140,7 @@ export const Projects = () => {
                           <tr>
                             <td>To do</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/todo_app">
+                              <a href={`${github}/todo_app`}>
                                 To do app
                               </a>
                             </td>
@@ -146,7 +148,7 @@ export const Projects = () => {
                           <tr>
                             <td>QR</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/QR">
+                              <a href={`${github}/QR`}>
                                 Generating QR
                               </a>
                             </td>
@@ -154,7 +156,7 @@ export const Projects = () => {
                           <tr>
                             <td>Surveys</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/survey">
+                              <a href={`${github}/survey`}>
                                 Creating surveys
                               </a>
                             </td>
@@ -162,7 +164,7 @@ export const Projects = () => {
                           <tr>
                             <td>Hangman</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/hangman">
+                              <a href={`${github}/hangman`}>
                                 Hangman
                               </a>
                             </td>
@@ -170,7 +172,7 @@ export const Projects = () => {
                           <tr>
                             <td>Sudoku</td>
                             <td>
-                              <a href="https://github.com/David-Beninson/sudoku_app">
+                              <a href={`${github}/sudoku_app`}>
                                 Sudoku
                               </a>
                             </td>
@@ -184,7 +186,7 @@ export const Projects = () => {
                             <h3>
                               {" "}
                               To see more projects on my GitHub account,{" "}
-                              <a href="https://github.com/David-Beninson?tab=repositories">
+                              <a href={`${github}?tab=repositories`}>
                                 {" "}
                                 click here
                               </a>

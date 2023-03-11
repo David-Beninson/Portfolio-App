@@ -3,14 +3,15 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
 import CV from "../assets/img/David_Beninson.pdf"
 import {
   BrowserRouter as Router
 } from "react-router-dom";
 
 export const NavBar = () => {
-
+  const linkedin = process.env.REACT_APP_LINKEDIN;
+  const facebook = process.env.REACT_APP_FACEBOOK;
+  const github = process.env.REACT_APP_GITHUB;
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -57,9 +58,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/david-beninson/"><img src={navIcon1} alt="linkedin" /></a>
-                <a href="https://www.facebook.com/david.dav.5220"><img src={navIcon2} alt="facebook" /></a>
-                <a href="https://github.com/David-Beninson"><img src={navIcon3} alt="github" /></a>
+                <a href={`${linkedin}`}><img src={navIcon1} alt="linkedin" /></a>
+                <a href={`${facebook}`}><img src={navIcon2} alt="facebook" /></a>
+                <a href={`${github}`}><img src={navIcon3} alt="github" /></a>
               </div>
               <button class="vvd" onClick={handleDowloadCV}>Download CV</button>
             </span>

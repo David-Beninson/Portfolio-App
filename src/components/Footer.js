@@ -6,6 +6,9 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
+  const linkedin = process.env.REACT_APP_LINKEDIN;
+  const facebook = process.env.REACT_APP_FACEBOOK;
+  const github = process.env.REACT_APP_GITHUB;
   return (
     <footer className="footer">
       <Container>
@@ -16,13 +19,13 @@ export const Footer = () => {
             </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/david-beninson/">
+              <a href={`${linkedin}`}>
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="https://www.facebook.com/david.dav.5220">
+              <a href={`${facebook}`}>
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://github.com/David-Beninson">
+              <a href={`${github}`}>
                 <img src={navIcon3} alt="" />
               </a>
             </div>
