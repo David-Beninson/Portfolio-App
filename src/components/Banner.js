@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["A junior frontEnd Developer", " A junior backEnd Developer", "A junior fullStack Developer"];
+  const toRotate = ["A frontEnd Developer", " A backEnd Developer", "A fullStack Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -70,13 +70,13 @@ export const Banner = () => {
                    <h3> <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ ""A junior frontEnd Developer", " A junior backEnd Designer", "A junior fullStack Developer"" ]'
+                      data-rotate='[ ""A frontEnd Developer", " A backEnd Designer", "A fullStack Developer"" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h3>
                   <p className="about">
-                    I recently completed a fullstack development course at
+                    I completed a fullstack development course at
                     SVCollege and in the SC50 online course by Harvard
                     University, now working as an intern at Abilisense as a
                     fullstack developer. I am looking for new opportunities to

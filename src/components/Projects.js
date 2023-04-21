@@ -11,15 +11,16 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const githubProjects = process.env.REACT_APP_GITHUB_PORJECTS;  
+  const githubProjects = process.env.REACT_APP_GITHUB_PORJECTS;
   const github = process.env.REACT_APP_GITHUB;
   const projects = [
     {
-      title: "'Chat GPT'",
+      title: "Goal Achievement",
       description:
-        "The ChatGPT-like interface connects to advanced GPT3 API to offer programming language help, code translation, and more features",
+        "The Goal Achievement app is a Next.js and MongoDB web app that helps users break down long-term goals into achievable milestones. It is also fully responsive. ",
       imgUrl: projImg1,
-      txt:null,
+      linkTo: "https://goal-achievement.vercel.app/",
+      txt: "Click me",
     },
     {
       title: "To Do List",
@@ -27,8 +28,7 @@ export const Projects = () => {
         "The to-do app lets users create, save, view, edit, and delete to-do lists and mark tasks as complete.",
       imgUrl: projImg2,
       linkTo: `${githubProjects}/todo_app/`,
-      txt:"Click me",
-
+      txt: "Click me",
     },
     {
       title: "QR generator",
@@ -36,14 +36,14 @@ export const Projects = () => {
         "The QR App generates QR codes for websites, or WhatsApp numbers, which users can download instantly",
       imgUrl: projImg3,
       linkTo: `${githubProjects}/QR/`,
-      txt:"Click me",
+      txt: "Click me",
     },
     {
       title: "Building Surveys",
       description:
         "The Survey App is a web tool for creating and sending surveys to contacts, with the option to view the survey results.",
       imgUrl: projImg4,
-      txt:null,
+      txt: null,
     },
     {
       title: "Hangman",
@@ -51,7 +51,7 @@ export const Projects = () => {
         "The Hangman app lets users guess a hidden word one letter at a time and shows correct/incorrect guesses.",
       imgUrl: projImg5,
       linkTo: `${githubProjects}/hangman/`,
-      txt:"Click me",
+      txt: "Click me",
     },
     {
       title: "Sudoku game",
@@ -59,11 +59,9 @@ export const Projects = () => {
         "The Sudoku game offers three levels of difficulty: easy, medium, and hard.",
       imgUrl: projImg6,
       linkTo: `${githubProjects}/sudoku_app/`,
-      txt:"Click me",
+      txt: "Click me",
     },
   ];
-
-  
 
   return (
     <section className="project" id="projects">
@@ -111,9 +109,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
-                            return (
-                              <ProjectCard key={index} {...project}/>
-                            );
+                            return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
@@ -132,49 +128,39 @@ export const Projects = () => {
                           <tr>
                             <td>Open Ai</td>
                             <td>
-                              <a href={`${github}/Open_Ai`}>
-                                My personal "Chat GPT"
+                              <a href={`${github}/goalAchievement`}>
+                                Goal Achievement app
                               </a>
                             </td>
                           </tr>
                           <tr>
                             <td>To do</td>
                             <td>
-                              <a href={`${github}/todo_app`}>
-                                To do app
-                              </a>
+                              <a href={`${github}/todo_app`}>To do app</a>
                             </td>
                           </tr>
                           <tr>
                             <td>QR</td>
                             <td>
-                              <a href={`${github}/QR`}>
-                                Generating QR
-                              </a>
+                              <a href={`${github}/QR`}>Generating QR</a>
                             </td>
                           </tr>
                           <tr>
                             <td>Surveys</td>
                             <td>
-                              <a href={`${github}/survey`}>
-                                Creating surveys
-                              </a>
+                              <a href={`${github}/survey`}>Creating surveys</a>
                             </td>
                           </tr>
                           <tr>
                             <td>Hangman</td>
                             <td>
-                              <a href={`${github}/hangman`}>
-                                Hangman
-                              </a>
+                              <a href={`${github}/hangman`}>Hangman</a>
                             </td>
                           </tr>
                           <tr>
                             <td>Sudoku</td>
                             <td>
-                              <a href={`${github}/sudoku_app`}>
-                                Sudoku
-                              </a>
+                              <a href={`${github}/sudoku_app`}>Sudoku</a>
                             </td>
                           </tr>
                         </table>
