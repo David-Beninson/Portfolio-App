@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio-App/static/css/main.7be39c18.css",
-    "main.js": "/Portfolio-App/static/js/main.f8b11e64.js",
+    "main.css": "/Portfolio-App/static/css/main.8140eba7.css",
+    "main.js": "/Portfolio-App/static/js/main.8d79220e.js",
     "static/js/787.fb771931.chunk.js": "/Portfolio-App/static/js/787.fb771931.chunk.js",
     "static/media/DavidBeninson_pic.JPG": "/Portfolio-App/static/media/DavidBeninson_pic.e6b211a60a507d34b691.JPG",
     "static/media/project-img6.png": "/Portfolio-App/static/media/project-img6.36c3055cfc2cd264c155.png",
     "static/media/color-sharp.png": "/Portfolio-App/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/Portfolio-App/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/project-img4.png": "/Portfolio-App/static/media/project-img4.70b8d8d8f52e192050d0.png",
-    "static/media/project-img1.png": "/Portfolio-App/static/media/project-img1.af925539a975749372e4.png",
     "static/media/project-img5.png": "/Portfolio-App/static/media/project-img5.6fd12462dd54a188b6df.png",
     "static/media/project-img3.png": "/Portfolio-App/static/media/project-img3.f99fbcb1a371ad55f5fa.png",
+    "static/media/project-img1.png": "/Portfolio-App/static/media/project-img1.91cdff35161fb276b862.png",
     "static/media/banner-bg.png": "/Portfolio-App/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/project-img2.png": "/Portfolio-App/static/media/project-img2.ed437e515df126b5bb86.png",
     "static/media/header-img.svg": "/Portfolio-App/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
@@ -19,18 +19,18 @@
     "static/media/CentraNo2-Book.ttf": "/Portfolio-App/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/Portfolio-App/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/contact-img.svg": "/Portfolio-App/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
-    "static/media/David_Beninson.pdf": "/Portfolio-App/static/media/David_Beninson.e77ebaa768ff40b56461.pdf",
+    "static/media/David_Beninson.pdf": "/Portfolio-App/static/media/David_Beninson.bd005c1dff317ba1ac84.pdf",
     "static/media/nav-icon3.svg": "/Portfolio-App/static/media/nav-icon3.9c83e393a8cab8015f15455498c69d24.svg",
     "index.html": "/Portfolio-App/index.html",
     "static/media/nav-icon1.svg": "/Portfolio-App/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/logo.svg": "/Portfolio-App/static/media/logo.a609efa31858282d04afe05a9d6eb917.svg",
     "static/media/nav-icon2.svg": "/Portfolio-App/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.7be39c18.css.map": "/Portfolio-App/static/css/main.7be39c18.css.map",
-    "main.f8b11e64.js.map": "/Portfolio-App/static/js/main.f8b11e64.js.map",
+    "main.8140eba7.css.map": "/Portfolio-App/static/css/main.8140eba7.css.map",
+    "main.8d79220e.js.map": "/Portfolio-App/static/js/main.8d79220e.js.map",
     "787.fb771931.chunk.js.map": "/Portfolio-App/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7be39c18.css",
-    "static/js/main.f8b11e64.js"
+    "static/css/main.8140eba7.css",
+    "static/js/main.8d79220e.js"
   ]
 }
